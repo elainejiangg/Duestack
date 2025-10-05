@@ -16,18 +16,17 @@
     "sourceMap": true,
     "moduleResolution": "node"
   },
-  "include": [
-    "*.ts"
-  ],
+  "include": ["*.ts"],
   "files": [
-    "dayplanner.ts",
     "gemini-llm.ts",
-    "dayplanner-tests.ts"
+    "parsed-deadline-suggestions.ts",
+    "parsed-deadline-suggestions-tests.ts",
+    "parsed-deadline-validators.ts",
+    "parsed-deadline-prompts.ts",
+    "parsed-deadline-editing.ts",
+    "parsed-deadline-state.ts"
   ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ],
+  "exclude": ["node_modules", "dist"],
   "ts-node": {
     "esm": false,
     "experimentalSpecifierResolution": "node"

@@ -1,26 +1,43 @@
 {
-  "name": "gemini-schedule-demo",
+  "name": "due-stack-demo",
   "version": "1.0.0",
-  "description": "A demo application showing how to use Google's Gemini API to create student schedules",
-  "main": "dist/dayplanner-tests.js",
+  "description": "A demo application showing AI-augmented deadline parsing and scheduling concepts",
+  "main": "dist/parsed-deadline-suggestions-tests.js",
   "scripts": {
     "build": "tsc",
-    "start": "npm run build && node dist/dayplanner-tests.js",
-    "dev": "ts-node --transpile-only dayplanner-tests.ts",
-    "test": "npm run build && node dist/dayplanner-tests.js",
-    "manual": "npm run build && node -e \"require('./dist/dayplanner-tests.js').testManualScheduling()\"",
-    "llm": "npm run build && node -e \"require('./dist/dayplanner-tests.js').testLLMScheduling()\"",
-    "mixed": "npm run build && node -e \"require('./dist/dayplanner-tests.js').testMixedScheduling()\""
+    "start": "npm run build && node dist/parsed-deadline-suggestions-tests.js",
+    "dev": "ts-node --transpile-only parsed-deadline-suggestions-tests.ts",
+    "test": "npm run build && node dist/parsed-deadline-suggestions-tests.js",
+    "canvas": "npm run build && node -e \"require('./dist/parsed-deadline-suggestions-tests.js').testCanvasParsing()\"",
+    "llm-doc": "npm run build && node -e \"require('./dist/parsed-deadline-suggestions-tests.js').testLLMDocumentExtraction()\"",
+    "llm-web": "npm run build && node -e \"require('./dist/parsed-deadline-suggestions-tests.js').testLLMWebsiteExtraction()\"",
+    "llm-refine": "npm run build && node -e \"require('./dist/parsed-deadline-suggestions-tests.js').testLLMRefinement()\"",
+    "scenarios": "npm run build && node dist/parsed-deadline-scenarios.js",
+    "llm-test": "npm run build && node -e \"require('./dist/parsed-deadline-suggestions-tests.js').testLLMConnection()\"",
+    "manual": "npm run build && node -e \"require('./dist/parsed-deadline-suggestions-tests.js').testManualEditing()\"",
+    "llm-pdf-png": "npm run build && node -e \"require('./dist/parsed-deadline-suggestions-tests.js').testPdfPngExtraction()\"",
+    "vague-terms": "npm run build && node -e \"require('./dist/parsed-deadline-suggestions-tests.js').testVagueAcademicTerms()\"",
+    "date-formats": "npm run build && node -e \"require('./dist/parsed-deadline-suggestions-tests.js').testInternationalDateFormats()\"",
+    "calendar-context": "npm run build && node -e \"require('./dist/parsed-deadline-suggestions-tests.js').testAcademicCalendarContext()\"",
+    "mixed": "npm run build && node -e \"require('./dist/parsed-deadline-suggestions-tests.js').testMixedWorkflow()\""
   },
-  "keywords": ["gemini", "ai", "schedule", "student", "demo", "typescript"],
+  "keywords": [
+    "gemini",
+    "ai",
+    "schedule",
+    "student",
+    "demo",
+    "typescript"
+  ],
   "author": "Student Demo",
   "license": "MIT",
   "dependencies": {
+    "@google/genai": "^1.22.0",
     "@google/generative-ai": "^0.21.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
-    "typescript": "^5.0.0",
-    "ts-node": "^10.9.0"
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
   }
 }
