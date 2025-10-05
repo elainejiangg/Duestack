@@ -7,7 +7,7 @@
 3. [Implement your concept](#3-implement-your-concept)
 4. [Explore richer test cases and prompts](#4-explore-richer-test-cases-and-prompts)
 5. [Add validators to your code](#5-add-validators-to-your-code)
-6. [Appendix: Real-World Prompt Engineering Journey](#appendix-real-world-prompt-engineering-journey)
+6. [Appendix: Prompt Engineering Journey/Learnings](#appendix-prompt-engineering-journeylearnings)
 
 ---
 
