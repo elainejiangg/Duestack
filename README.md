@@ -309,7 +309,7 @@ npm run scenarios       # All three scenarios with complete user workflows
 
 The three test scenarios are implemented in [parsed-deadline-scenarios.ts](parsed-deadline-scenarios.ts), each demonstrating a complete sequence of user actions followed by LLM-based actions.
 
-**Note**: For detailed information the amore other details about the prompt engineering process not just related to these test scenarios, including failures encountered and solutions discovered during development, see the [Appendix: Prompt Engineering Journey/Learnings](#appendix-prompt-engineering-journeylearnings).
+**Note**: For detailed information the amore other details about the prompt engineering process not just related to these test scenarios, including learning specific to the gemini API, see the [Appendix: Prompt Engineering Journey/Learnings](#appendix-prompt-engineering-journeylearnings).
 
 ---
 
